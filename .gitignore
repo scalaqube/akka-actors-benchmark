@@ -1,0 +1,8 @@
+### Intellij ###
+.idea/
+
+### Scala ###
+**/target/
+
+ Populating done in 659281 ms.
+ Querying done in   280521 ms.
