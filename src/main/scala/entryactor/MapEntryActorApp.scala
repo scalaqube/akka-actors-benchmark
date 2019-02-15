@@ -26,7 +26,7 @@ object MapEntryActorApp extends RandomSupport with ShardingSupport {
   val KeySize  = 5000000
 
   def populate(map: ActorRef) = {
-    val result = Source(1 to Attempts)
+    val result = Source(1 to Attempts )
       .mapAsync(32)(i => map ? Envelope(i.toString, Insert(randomValue())))
       .runWith(Sink.ignore)
 
